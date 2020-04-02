@@ -1,0 +1,38 @@
+//문서 공통 스타일 셋
+
+//양식
+html{
+  font-size: 10px;
+  body{
+    font-size: 1.4rem;
+    margin: 0;
+    background: $BG;
+    *{
+      box-sizing: border-box;
+      outline: none;
+    }
+  }
+}
+
+//개별 엘리먼트
+a{
+  color: inherit;
+  text-decoration: none;
+}
+fieldset{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+button{
+  cursor: pointer;
+}
+input::placeholder{
+  color: $pointColor;
+  font-weight: bold;
+}
+
+//헤딩
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}

@@ -1,0 +1,46 @@
+//레이아웃
+body{
+  position: relative;
+}
+header,
+.main-wrap,
+.notice-message{
+  width: $wrapWidth;
+  margin: 0 auto;
+}
+header{
+  height: $headerHeight;
+}
+.header-bg{
+  background-color: $headerBG;
+}
+.main-wrap{
+  height: 2000px;
+}
+.banner{
+  width: 100%;
+  height: calc(100vh - #{$headerHeight} - #{$oneLineHeight});
+}
+.one-line-message{
+  height: $oneLineHeight;
+  background: $subColor;
+}
+.notice-message{
+  background: $testColor;
+  letter-spacing: $letterS;
+  padding: 0 20px;
+  line-height: $oneLineHeight;
+  font-size: calc(#{$oneLineHeight} / 2.8);
+  text-align: right;
+}
+.banner{
+  background: $bannerBG;
+}
+
+//컬러테스트
+header, main{
+  background: $testColor;
+}
+.main-wrap{
+  background: $subBG;
+}

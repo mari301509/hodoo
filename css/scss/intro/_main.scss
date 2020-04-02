@@ -1,0 +1,38 @@
+//레이아웃
+.intro-wrap{
+  width: 50%;
+  height: 500px;
+  margin: 5% auto;
+}
+.button-logo{
+  width: 100%;
+  height: 300px;
+}
+.login-form{
+  margin: 30px auto;
+  width: 300px;
+}
+.login-form fieldset:not(.selected){
+  display: none;
+}
+//로고
+.button-logo{
+  background: url(../images/logo.png) no-repeat center bottom;
+}
+//로그인 input
+.selected input {
+  padding: 5px 10px;
+  width: 100%;
+  margin: 6px 0;
+  font-size: 1.7rem;
+  line-height: 2em;
+}
+//로그인 button
+.login-form button{
+  display: block;
+  margin: 15px auto;
+  padding: 20px 17px 20px 20px;
+  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: $letterS;
+}

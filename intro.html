@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HODOO</title>
+    <link rel="stylesheet" href="css/scss/style.scss">
+</head>
+<body>
+    <div class="intro-wrap">
+<!--로고-->
+        <h1 class="intro-heading">
+<!--h1에 텍스트값을 주지만 텍스트는 숨기기 위해 span class 를 a11y-hidden 으로 주고 컨트롤-->
+            <button class="button-none button-logo" type="button"><span class="a11y-hidden">logo</span></button>
+        </h1>
+<!--로고 끝-->
+
+<!--로그인 폼-->
+        <form action="#" method="post" class="login-form">
+            <h2 class="a11y-hidden">login</h2>
+<!--회원 전용 폼-->
+            <fieldset>
+                <legend>member login</legend>
+                <div class="login-id">
+                    <label for="id" class="a11y-hidden">ID</label>
+                    <input class="border-set"
+                           type="text" id="id" placeholder="ID" name="id" required>
+                </div>
+                <div class="login-pw">
+                    <label for="pw" class="a11y-hidden">PW</label>
+                    <input class="border-set"
+                           type="password" id="pw" placeholder="Password" name="pw" required>
+                </div>
+                <button class="border-set button">LOGIN</button>
+            </fieldset>
+<!--게스트 전용 폼-->
+<!--로고를 클릭하면 fieldset 에 class 명 selected 가 생성되면서 display 값이 바뀐다-->
+            <fieldset class="selected">
+                <legend>guest login</legend>
+                <label for="guestPw" class="a11y-hidden">guest login</label>
+                <input class="border-set"
+                       type="password" id="guestPw" name="guestPw" placeholder="Guest Password" required>
+                <button class="border-set button">GUEST LOGIN</button>
+            </fieldset>
+        </form>
+    </div>
+    <footer>
+        <small class="copyright">COPYRIGHT © 2020 by HODOO</small>
+        <div class="admin-link">
+            <a href="https://twitter.com/hodoo_commu" title="공식 트위터">@호두</a>
+            <a href="https://twitter.com/_301509" target="_blank" title="어차피 비공개">@미드차이</a><a href=""></a>
+        </div>
+    </footer>
+</body>
+</html>
