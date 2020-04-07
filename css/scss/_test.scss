@@ -1,0 +1,18 @@
+
+//테스트용
+$testColor: MediumSlateBlue;
+$testColor2: LightSkyBlue;
+
+//테스트
+header, main{
+  background: $testColor;
+}
+.main-wrap{
+  background: $subBG;
+}
+.main-wrap{
+  height: 200px;
+}
+.notice-message{
+  background: $testColor;
+}

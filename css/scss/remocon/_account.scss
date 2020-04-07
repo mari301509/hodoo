@@ -1,0 +1,10 @@
+body{
+  position: relative;
+}
+.btnSet-account{
+  position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  right: 30px;
+  bottom: 30px;
+}

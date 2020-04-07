@@ -1,46 +1,51 @@
 //레이아웃
-body{
-  position: relative;
-}
-header,
-.main-wrap,
-.notice-message{
-  width: $wrapWidth;
-  margin: 0 auto;
-}
+
 header{
+  width: $wrapWidth;
   height: $headerHeight;
+
+  margin: 0 auto;
+  padding: 0 50px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  color: $subColor;
 }
+.btn-subMenuOpen{
+  display: none;
+}
+.subMenu-list{
+  height: 100px;
+
+  display: flex;
+  flex-flow: column nowrap;
+ }
+.mainMenu-item,
+.subMenu-item{
+  display: inline-block;
+  margin: auto;
+
+  text-transform: uppercase;
+}
+.mainMenu-link{
+  display: block;
+  padding: 0 30px;
+  font-size: 3rem;
+}
+
+
+//로고
+.logo img{
+  width: 150px;
+}
+
+//메뉴
+
+//배경화면 control
 .header-bg{
   background-color: $headerBG;
 }
-.main-wrap{
-  height: 2000px;
-}
-.banner{
-  width: 100%;
-  height: calc(100vh - #{$headerHeight} - #{$oneLineHeight});
-}
-.one-line-message{
-  height: $oneLineHeight;
-  background: $subColor;
-}
-.notice-message{
-  background: $testColor;
-  letter-spacing: $letterS;
-  padding: 0 20px;
-  line-height: $oneLineHeight;
-  font-size: calc(#{$oneLineHeight} / 2.8);
-  text-align: right;
-}
-.banner{
-  background: $bannerBG;
-}
 
-//컬러테스트
-header, main{
-  background: $testColor;
-}
-.main-wrap{
-  background: $subBG;
-}

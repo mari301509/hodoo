@@ -6,8 +6,9 @@ $subColor: white;
 //배경
 $BG: cornflowerblue;
 $subBG: darkslateblue;
+$logoBG: url(../images/logo.png) no-repeat center bottom;
 $headerBG: PowderBlue;
-$bannerBG: url(../images/logo.png);
+$bannerBG: url(../images/logo.png) no-repeat center;
 
 //보더
 $border: 1px solid $borderColor;
@@ -27,6 +28,3 @@ $oneLineHeight: 50px;
 //컨텐츠
 $oneLineM: "영차자자자";
 
-//테스트용
-$testColor: MediumSlateBlue;
-$testColor2: LightSkyBlue;

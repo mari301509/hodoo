@@ -5,4 +5,9 @@
 
 @import "intro/main";
 
+
 @import "footer/footer";
+footer{
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,63 @@
+.main-wrap,
+.notice-message{
+  width: $wrapWidth;
+  margin: 0 auto;
+}
+.main-wrap{
+  display: grid;
+  grid-template: "twitter rankin schedule" 3fr
+                  "twitter admin schedule" 2fr
+                  /3fr 3fr 4fr;
+  //그리드 세로 가로 갭(여백)
+  gap: 20px 15px;
+}
+//이벤트 배너
+.banner{
+  width: 100%;
+  height: calc(100vh - #{$headerHeight} - #{$oneLineHeight});
+  position: relative;
+}
+.banner-link{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.event-invite{
+  background: $bannerBG;
+}
+.btn-prevEvent,
+.btn-nextEvent{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  font-size: 5rem;
+  color: $subColor;
+}
+.btn-nextEvent{
+  right: 0;
+}
+
+//전광판
+.notice-message{
+  letter-spacing: $letterS;
+  padding: 0 20px;
+  line-height: $oneLineHeight;
+  font-size: calc(#{$oneLineHeight} / 2.8);
+  text-align: right;
+}
+
+//트위터
+.twitter{
+  width: 100%;
+  height: 100%;
+  background: #000;
+  grid-area: twitter;
+}
+
+
+//컬러
+.one-line-message{
+  height: $oneLineHeight;
+  background: $subColor;
+}
