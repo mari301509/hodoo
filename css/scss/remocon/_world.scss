@@ -1,0 +1,30 @@
+
+.btnSet-world{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+  height: 250px;
+  padding: 10px;
+
+  position: fixed;
+  left: 60px;
+  top: 150px;
+  background: $subBG;
+}
+
+.btn-world{
+  display: block;
+
+  width: $btnSize;
+  height: $btnSize;
+  line-height: $btnSize;
+  text-align: center;
+
+  border: 1px solid $pointColor;
+  border-radius: 50%;
+
+  background: $subColor;
+  color: $pointColor;
+
+}

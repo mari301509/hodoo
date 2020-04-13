@@ -1,28 +1,32 @@
 //레이아웃
 
 header{
+  //크기
   width: $wrapWidth;
   height: $headerHeight;
-
+  //여백
   margin: 0 auto;
   padding: 0 50px;
-
+  //정렬
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-
+  //색상
   color: $subColor;
 }
+
 .btn-subMenuOpen{
   display: none;
 }
+
 .subMenu-list{
   height: 100px;
 
   display: flex;
   flex-flow: column nowrap;
  }
+
 .mainMenu-item,
 .subMenu-item{
   display: inline-block;

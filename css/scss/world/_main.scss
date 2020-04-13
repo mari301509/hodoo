@@ -1,0 +1,20 @@
+//레이아웃
+.main p{
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px 0 100px;
+}
+
+
+//세계관 전환버튼
+.btn-pre,
+.btn-next {
+  position: fixed;
+
+  height: 50vh;
+  width: 10vw;
+}
+.btn-pre:hover,
+.btn-next:hover{
+  opacity: 1;
+}

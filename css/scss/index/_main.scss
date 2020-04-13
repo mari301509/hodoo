@@ -1,11 +1,12 @@
-.main-wrap,
 .notice-message{
   width: $wrapWidth;
   margin: 0 auto;
 }
 .main-wrap{
+  margin: calc( ( 100vh - #{$scrolledHeaderHeight} - #{$footerHeight} - #{$mainHeight} ) / 2 ) auto ;
+  height: $mainHeight;
   display: grid;
-  grid-template: "twitter rankin schedule" 3fr
+  grid-template: "twitter ranking schedule" 3fr
                   "twitter admin schedule" 2fr
                   /3fr 3fr 4fr;
   //그리드 세로 가로 갭(여백)
@@ -25,21 +26,21 @@
 .event-invite{
   background: $bannerBG;
 }
-.btn-prevEvent,
-.btn-nextEvent{
+.btn-pre,
+.btn-next{
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 50px;
-  font-size: 5rem;
-  color: $subColor;
 }
-.btn-nextEvent{
-  right: 0;
+.event-invite:hover .btn-next,
+.event-invite:hover .btn-pre{
+  opacity: 1;
 }
 
+
+
 //전광판
-.notice-message{
+.one-line-message::after{
+  content: $oneLineM;
+  display: block;
   letter-spacing: $letterS;
   padding: 0 20px;
   line-height: $oneLineHeight;
@@ -51,13 +52,33 @@
 .twitter{
   width: 100%;
   height: 100%;
-  background: #000;
   grid-area: twitter;
 }
 
+//랭킹
+.ranking{
+  width: 100%;
+  height: 100%;
+  grid-area: ranking;
+}
+
+//어드민
+.admin{
+  width: 100%;
+  height: 100%;
+  grid-area: admin;
+}
+
+//스케줄
+.schedule{
+  width: 100%;
+  height: 100%;
+  grid-area: schedule;
+}
 
 //컬러
 .one-line-message{
   height: $oneLineHeight;
   background: $subColor;
+  color: $pointColor
 }

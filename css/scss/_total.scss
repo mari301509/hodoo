@@ -34,9 +34,22 @@ input::placeholder{
 ul{
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 //헤딩
 h1,h2,h3,h4,h5,h6{
   margin: 0;
+}
+
+//공통클래스
+
+.main h2 {
+  text-transform: uppercase;
+  text-align: center;
+
+  font-size: 4rem;
+
+  color: $subColor;
+  padding: 50px 0;
 }

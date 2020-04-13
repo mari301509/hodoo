@@ -4,11 +4,10 @@
 @import "modules";
 
 @import "index/header";
-@import "index/main";
-
-
-@import "footer/footer";
+@import "world/main";
 
 @import "remocon/account";
+@import "remocon/prenext";
+@import "remocon/toTop";
+@import "remocon/world";
 
-@import "test";

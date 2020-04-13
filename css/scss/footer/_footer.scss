@@ -5,13 +5,13 @@ footer{
   color: $subColor;
 }
 .copyright{
-  line-height: 30px;
+  line-height: $footerHeight;
 }
 .admin-link{
   position: absolute;
   right: 0;
   margin-right: 20px;
-  line-height: 30px;
+  line-height: $footerHeight;
   display: inline-block;
   word-spacing: $wordS;
 }

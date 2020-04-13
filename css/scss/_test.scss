@@ -2,17 +2,47 @@
 //테스트용
 $testColor: MediumSlateBlue;
 $testColor2: LightSkyBlue;
+$testColor3: steelblue;
 
 //테스트
 header, main{
   background: $testColor;
 }
 .main-wrap{
-  background: $subBG;
+  background: $testColor;
 }
 .main-wrap{
-  height: 200px;
+  //height: 200px;
 }
 .notice-message{
   background: $testColor;
+}
+
+
+.schedule{
+  background: cornflowerblue;
+}
+.admin{
+  background: steelblue;
+}
+.ranking{
+  background: cadetblue;
+}
+.twitter{
+  background: pink;
+}
+
+
+.world,
+.uniform,
+.system,
+.FQA{
+  height: 50vh;
+}
+
+.member-item{
+  background: $testColor3;
+}
+.member-list{
+  background: $testColor2;
 }
